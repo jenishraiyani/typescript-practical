@@ -46,20 +46,4 @@ export class Validations{
       return true;
     }
      
-    fixedToExponent() {
-      let lastFourEntry = mainScreen.innerHTML.substr(mainScreen.innerHTML.length - 4);
-      let lastEntry = mainScreen.innerHTML.slice(-1);
-      if (lastEntry == ".") {
-          mainScreen.innerHTML += "e+0";
-      }
-      else if (operators.includes(lastEntry)) {
-          mainScreen.innerHTML = mainScreen.innerHTML;
-      }
-      else if (lastFourEntry != ".e+0") {
-          mainScreen.innerHTML += ".e+0";
-      }
-      else {
-          mainScreen.innerHTML = mainScreen.innerHTML;
-      }
-  }
   }
